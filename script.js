@@ -76,3 +76,4 @@ dot.prototype.move = function() {
 
 // start animation
 render();
+
