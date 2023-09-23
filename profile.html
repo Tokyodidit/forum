@@ -1,0 +1,22 @@
+<body>
+    <!-- Rest of your content -->
+
+    <div class="profile-tab">
+        <a id="profileLink" href="#">Profile</a>
+    </div>
+
+    <!-- Your JavaScript code to handle the profile link -->
+    <script>
+        // Mock user data for the logged-in user (replace with your actual user data)
+        const currentUser = {
+            username: "black man",
+            id: 1,
+        };
+
+        // Get the profile link element
+        const profileLink = document.getElementById("profileLink");
+
+        // Set the href attribute of the profile link based on the logged-in user
+        profileLink.href = `/profile.html?id=${currentUser.id}`;
+    </script>
+</body>

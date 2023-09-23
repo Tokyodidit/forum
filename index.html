@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forum</title>
+    <style>
+        body {
+            background-color: #303030;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #303030;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .chat {
+            background-color: #303030;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .chat-box {
+            background-color: #202020;
+            color: #FFFFFF;
+            padding: 10px;
+            margin: 20px;
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        .profile-link {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #303030;
+            color: #FFFFFF;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .topics {
+            background-color: #303030;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sub-topic {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the Forum</h1>
+    </div>
+
+    <div class="chat">
+        <h2>Chat</h2>
+        <div class="chat-box">
+            <!-- Chat messages will be dynamically added here -->
+        </div>
+    </div>
+
+    <a class="profile-link" href="profile.html">Profile</a>
+
+    <div class="topics">
+        <h2>Topics</h2>
+        <h3 class="sub-topic">Topic 1</h3>
+        <!-- Clicking on the sub-topic will take you to another HTML page -->
+        <h3 class="sub-topic">Topic 2</h3>
+        <!-- Clicking on the sub-topic will take you to another HTML page -->
+    </div>
+</body>
+</html>
