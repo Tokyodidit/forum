@@ -9,8 +9,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 1000vh;
+    filter: blur(x); /* Adjust the blur value as needed */
     
 }
+
 
 
 form {
@@ -21,9 +23,11 @@ form {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
+    animation: myAnim 2s ease 0s 1 normal forwards;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    
 }
 
 input[type="submit"] {
@@ -35,6 +39,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 .container {
+    filter: drop-shadow(17px -4px 17px #000000);
     position: relative;
     z-index: 1;
     padding: 10px;
@@ -168,11 +173,10 @@ input[type="submit"] {
     top: 1px;
   }
   
-.wavy-color-text {
-    font-size: 2rem;
+  .wavy-color-text {
+    font-size: 2.5rem;
     color: transparent;
-    animation: waveColor 4s linear infinite, changeColor 8s linear infinite;
-    background: linear-gradient(90deg, blue, purple);
+    background: linear-gradient(to bottom, #c244b7, #578ddf);
     background-clip: text;
     -webkit-background-clip: text;
     display: inline-block;
@@ -273,3 +277,37 @@ body {
 .register:hover {
     transform: scale(1.1); /* Increase the size on hover */
 }
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+/* HTML and body elements should have a height of 100% for this to work */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
